@@ -10,16 +10,13 @@ import java.util.List;
 
 public class JavaApplication2 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         // TODO code application logic here
         RandGenerator myrand = new RandGenerator();
         //FirstTask
         double[] d1=new double[1000];
-        double s1=0;//для середнього
-        double disp1=0;//для дисперсії
+        double s1=0;
+        double disp1=0;
 
         for (int i=0;i<d1.length;i++) {
             d1[i]=myrand.getRand01();
@@ -90,7 +87,7 @@ public class JavaApplication2 {
             interval3[(int)Math.round(Math.floor(d3[i]*10))]++;
         for (int i=0;i<60;i++){
             x3[i]=0.1*i;
-            System.out.printf("%4.2f-%4.2f%10d%10.4f%n", (0.1*i),(0.1*(i+1)),interval3[i],(1.0*interval3[i]/d3.length));//виводимо таблицю
+            System.out.printf("%4.2f-%4.2f%10d%10.4f%n", (0.1*i),(0.1*(i+1)),interval3[i],(1.0*interval3[i]/d3.length));
         }
 
         new Draw(x1,interval1,3,"The sequence is evenly distributed",800,300,"%4.2f",20,20);
