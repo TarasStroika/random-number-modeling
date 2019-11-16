@@ -1,4 +1,4 @@
-﻿package javaapplication2;
+package javaapplication2;
 
 import java.awt.Color;
 import java.awt.Dimension;
